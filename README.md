@@ -1,30 +1,76 @@
-# OMSAI Trade Website
+# Om Sai Trade Concern - Website
 
-This is the source code for the OMSAI Trade website. The project contains static HTML pages, CSS, JavaScript, and some server-side scripts.
+A modern, responsive website for Om Sai Trade Concern, an ISO 9001:2000 certified electronics and electrical products company based in Nepal.
 
-## Project Structure
+## 📁 Project Structure
 
-- **HTML Files**: Main site pages (e.g., `about-us.htm`, `contact-us.htm`, `products.htm`, etc.)
-- **css/**: Stylesheets for the website
-- **images/**: Image assets
-- **js-menu/**: JavaScript files for menu and site interactivity
-- **omsaicontent/**: Additional content (details depend on folder contents)
-- **Scripts/**: JavaScript utility scripts
-- **send.php**: PHP script for handling form submissions
-- **cgi-bin/**: (If used) for CGI scripts
+```
+omsai-trade-newwebsite/
+│
+├── index.html              # Main homepage (standard)
+├── home.html              # Modern responsive homepage
+│
+├── about-us.html          # Company information
+├── products.html          # Product catalog
+├── services.html          # Services offered
+├── clients.html           # Client information
+├── careers.html           # Career opportunities
+├── contact-us.html        # Contact information
+├── enquiry.html           # Enquiry form
+├── news-events.html      # News and events
+├── customer-voice.html    # Customer testimonials
+│
+├── css/
+│   └── sai.css           # Main stylesheet
+│
+├── images/               # All image assets
+│
+├── js-menu/              # JavaScript menu
+│   ├── sai.js            # Menu configuration
+│   └── mmenu.js          # Menu library
+│
+└── send.php              # PHP form handler for enquiry form
+```
 
-## How to Use
+## 🚀 Getting Started
 
-1. Open `default.htm` or `home.html` in a web browser to view the homepage.
-2. Edit HTML, CSS, or JS files as needed for content or style changes.
-3. For contact forms, ensure your server supports PHP for `send.php` to work.
+1. Upload all files to your web server (cPanel public_html directory)
+2. Ensure PHP is enabled on your server
+3. Configure recipient email in `send.php` (line 3: `$_to = 'info@omsai-trade.com';`)
+4. Access `index.html` or `home.html` in your browser
 
-## Notes
+## 🔧 Configuration
 
-- This is a static website with some dynamic form handling via PHP.
-- For any server-side features, upload to a web server with PHP support.
-- The `eco1119711072920.sql` file may contain database schema or data (review before use).
+- **Menu**: Edit `js-menu/sai.js`
+- **Forms**: Edit `send.php` to configure recipient email (line 3)
+- **Styles**: Edit `css/sai.css`
 
-## License
+## 📄 Main Pages
 
-Please add your license information here if applicable.
+- **index.html** - Standard homepage
+- **home.html** - Modern responsive homepage (recommended)
+- **about-us.html** - Company info, vision, mission
+- **products.html** - Product catalog
+- **contact-us.html** - Contact information
+
+## 🌐 Browser Support
+
+Works on all modern browsers (Chrome, Firefox, Safari, Edge)
+
+## 📧 Contact Form
+
+The enquiry form uses **PHP mail()** function via `send.php`.
+- ✅ No API keys needed
+- ✅ Uses server's built-in mail configuration
+- ✅ Simple and straightforward
+
+**Configuration:** Edit `send.php` line 3 to set your recipient email:
+```php
+$_to = 'your-email@example.com';
+```
+
+**Note:** Some cPanel hosts may disable PHP mail(). If emails don't send, check with your hosting provider or see `FORM_OPTIONS.md` for alternatives.
+
+---
+
+**Copyright © 2024 Om Sai Trade Concern. All rights reserved.**
