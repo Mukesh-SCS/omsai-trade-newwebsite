@@ -1,7 +1,7 @@
 <?php 
 #--- Send mails to
 $_to = 'info@omsai-trade.com';
-$_formpage = 'enquiry.htm';
+$_formpage = 'enquiry.html';
 $Appname = 'Om Sai Trade Concern';
 #--- Now Code
 $_message = 'Sorry, there was an unexpected error!<br />Please try again later.';
@@ -20,7 +20,8 @@ $_message = 'Sorry, there was an unexpected error!<br />Please try again later.'
 		  }
 		}
 	  }
-	  if(!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $_email)) {
+	  // Validate email address (using modern preg_match instead of deprecated eregi)
+	  if(!preg_match("/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i", $_email)) {
 		$_message = 'Invalid Email Address!<br />Email Address must be in the format you@server.ext';
 	  }
 	#--- Prepare Headers for the Mail
@@ -60,6 +61,7 @@ ob_start();
 require_once($_formpage);
 $page = ob_get_clean();
 $_message = "<p align=\"center\">$_message</p>";
-echo eregi_replace("<form[^>]*>(.*)</form>", $_message, $page);
+// Replace form with message (using modern preg_replace instead of deprecated eregi_replace)
+echo preg_replace("/<form[^>]*>(.*)<\/form>/is", $_message, $page);
 #---
 ?>

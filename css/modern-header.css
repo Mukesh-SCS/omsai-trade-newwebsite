@@ -1,0 +1,144 @@
+/* Modern Header Styles - Reusable across all pages */
+.modern-header {
+    background: linear-gradient(135deg, #016BB9 0%, #3A94E1 100%);
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: visible;
+    transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+/* Expand padding on hover */
+.modern-header:hover {
+    padding: 25px 0;
+}
+
+.modern-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.modern-header::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.header-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap !important;
+    width: 100%;
+}
+
+.header-logo {
+    flex-shrink: 0;
+    width: auto;
+    min-width: 90px;
+}
+
+.header-logo img {
+    max-width: 90px;
+    height: auto;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2));
+    transition: transform 0.3s ease;
+}
+
+.header-logo img:hover {
+    transform: scale(1.05);
+}
+
+.modern-nav {
+    background-color: transparent;
+    padding: 0;
+    text-align: center;
+    flex: 1 1 auto;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 0;
+    overflow: visible;
+    max-width: 100%;
+}
+
+/* Minimize effect when not hovering */
+.modern-header:not(:hover) .modern-nav {
+    gap: 5px;
+    opacity: 0.7;
+}
+
+.modern-header:not(:hover) .modern-nav a {
+    font-size: 13px;
+    padding: 8px 12px;
+}
+
+.modern-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    position: relative;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    white-space: nowrap !important;
+    flex-shrink: 1 !important;
+    min-width: fit-content;
+}
+
+.modern-nav a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+.modern-nav a:hover {
+    background-color: rgba(255,255,255,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-color: rgba(255,255,255,0.4);
+}
+
+.modern-nav a:hover::before {
+    width: 80%;
+}
+
+/* Responsive styles removed - header always stays horizontal */
+

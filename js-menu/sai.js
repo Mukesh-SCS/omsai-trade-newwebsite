@@ -60,14 +60,14 @@ style1,                                // Properties Array - this is set higher 
 
 
 
-,"Home","default.htm","default.htm","About us",1
-,"About Us","about-us.htm","#","About Us",1
-,"Products","products.htm","#","Products",1
-,"Clients","clients.htm","#","Clients",1
-,"Services","services.htm","#","Services",1
-,"Call Center","call-center.htm","#","Call Center",1
-,"Enquiry","enquiry.htm","#","Enquiry",1
-,"Contact Us","contact-us.htm","#","Contact Us",1
+,"Home","index.html","index.html","About us",1
+,"About Us","about-us.html","#","About Us",1
+,"Products","products.html","#","Products",1
+,"Clients","clients.html","#","Clients",1
+,"Services","services.html","#","Services",1
+,"Call Center","call-center.html","#","Call Center",1
+,"Enquiry","enquiry.html","#","Enquiry",1
+,"Contact Us","contact-us.html","#","Contact Us",1
 
 
 
@@ -80,7 +80,7 @@ style1,                                // Properties Array - this is set higher 
  addmenu(menu=["abt",
 		,,175,1,"",style1,,"left",effect,,,,,,,,,,,,
 		
-        ,"About Us","about-us.htm","#","About Us",1            
+        ,"About Us","about-us.html","#","About Us",1            
 		,"Philosophy","#","#","Philosophy",1
 	    ,"Vision","#","#","Vision",1
 		,"Management Profile","#","#","Management Profile",1            
