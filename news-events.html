@@ -1,349 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Om Sai Trade Concern</title>
-<link href="css/sai.css" rel="stylesheet" type="text/css" />
-<link href="css/modern-header.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Om Sai Trade Concern News & Events - Stay updated with our latest news and announcements.">
+    <title>News & Events - Om Sai Trade Concern</title>
+    
+    <!-- Modern CSS System -->
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
+    <link href="css/modern-header.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="modern-header">
-    <div class="header-wrapper">
-        <div class="header-logo">
-            <a href="index.html"><img src="images/LOGO.gif" alt="Om Sai Trade Concern Logo" /></a>
-        </div>
-        <nav class="modern-nav">
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="clients.html">Clients</a>
-            <a href="services.html">Services</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact-us.html">Contact Us</a>
-            <a href="about-us.html">About Us</a>
-        </nav>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="modern-header">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="index.html"><img src="images/LOGO.gif" alt="Om Sai Trade Concern Logo"></a>
+                </div>
+                <nav class="modern-nav" aria-label="Main Navigation">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="services.html">Services</a>
+                    <a href="enquiry.html">Enquiry</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="about-us.html">About Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero hero-small news-hero" style="background: linear-gradient(135deg, rgba(1, 107, 185, 0.9) 0%, rgba(58, 148, 225, 0.85) 100%), url('images/inner-banner.jpg') center/cover no-repeat;">
+            <div class="hero-content">
+                <h1 class="hero-title">News & Events</h1>
+                <p class="hero-subtitle">Stay updated with our latest news and announcements</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Customer Voice -->
+                <div class="sidebar-box">
+                    <h3>Customers Voice</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                        Om Sai Trade is a high-flying ISO 9001:2000 certified company. The certification itself talks about the quality benchmark being maintained by the firm.
+                    </p>
+                    <a href="customer-voice.html" class="read-more">Read More</a>
+                </div>
+
+                <!-- Certifications -->
+                <div class="sidebar-box">
+                    <h3>Our Certifications</h3>
+                    <div class="certification">
+                        <a href="images/ISO omsai-2.JPG" target="_blank">
+                            <img src="images/certification.gif" alt="ISO 9001:2000 Certification" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="sidebar-box">
+                    <h3>Quick Links</h3>
+                    <ul class="list-arrow">
+                        <li><a href="products.html">Our Products</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="enquiry.html">Submit Enquiry</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <section class="content-area">
+                <h2 style="color: var(--primary-color); margin-bottom: var(--spacing-xl);">Latest News & Events</h2>
+
+                <div class="news-grid">
+                    <!-- News Item 1 -->
+                    <article class="news-card card">
+                        <div class="news-card-body">
+                            <span class="news-card-date">27 October 2011</span>
+                            <h3 class="news-card-title">We are coming with new products</h3>
+                            <p class="news-card-text">
+                                Om Sai Trade Concern is expanding its product line to better serve our customers. Stay tuned for exciting new additions to our catalog.
+                            </p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- News Item 2 -->
+                    <article class="news-card card">
+                        <div class="news-card-body">
+                            <span class="news-card-date">27 September 2011</span>
+                            <h3 class="news-card-title">We are coming with new products</h3>
+                            <p class="news-card-text">
+                                Exciting updates coming to our product offerings. We continue to source the best quality equipment for our valued customers.
+                            </p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- News Item 3 -->
+                    <article class="news-card card">
+                        <div class="news-card-body">
+                            <span class="news-card-date">ISO Certification</span>
+                            <h3 class="news-card-title">ISO 9001:2000 Certified</h3>
+                            <p class="news-card-text">
+                                Om Sai Trade Concern maintains its ISO 9001:2000 certification, reflecting our commitment to quality and excellence in all our operations.
+                            </p>
+                            <a href="#" class="card-link">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Newsletter Signup -->
+                <div style="text-align: center; margin-top: var(--spacing-xxl); padding: var(--spacing-xl); background: var(--bg-gray); border-radius: var(--radius-lg);">
+                    <h3 style="margin-bottom: var(--spacing-md);">Stay Updated</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--spacing-lg);">
+                        Contact us to receive updates about new products and services.
+                    </p>
+                    <a href="contact-us.html" class="btn btn-primary">Contact Us</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="about-us.html">Vision & Mission</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Supply of Electrical Equipment</a></li>
+                        <li><a href="services.html">Tender Based Supply</a></li>
+                        <li><a href="services.html">Telecom Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Telecommunication Equipment</a></li>
+                        <li><a href="products.html">Transmission Equipment</a></li>
+                        <li><a href="products.html">Telecom Testing Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2026 Om Sai Trade Concern. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
-</div>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="20" align="left" valign="top"></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="10" align="left" valign="top"></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td align="left" valign="top" bgcolor="#EDF3FA"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td valign="top" bgcolor="#e3edf6"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="right"><img src="images/box-top-corner.gif" width="11" height="11" /></td>
-            </tr>
-            <tr>
-              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="15">&nbsp;</td>
-                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td height="21" valign="top" class="subtitle3">NEWS &amp; EVENTS</td>
-                        </tr>
-                        <tr>
-                          <td class="text10gray"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td height="17" valign="top"><span class="text11bold">27 Sep 11</span> <a href="#" class="box-link">We are coming with new products<br />
-                                </a></td>
-                              </tr>
-                              <tr>
-                                <td height="17"><span class="text11bold">27 Oct 11</span> <a href="#" class="box-link">We are coming with new products<br />
-                                </a></td>
-                              </tr>
-                          </table></td>
-                        </tr>
-                        <tr>
-                          <td height="16" valign="bottom" class="text10gray"><a href="news-events.html"><img src="images/read-more.gif" width="56" height="9" border="0" /></a></td>
-                        </tr>
-                    </table></td>
-                    <td width="15">&nbsp;</td>
-                  </tr>
-              </table></td>
-            </tr>
-            <tr>
-              <td height="10"></td>
-            </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td background="images/box-bot-line.gif"><img src="images/box-bot-line.gif" width="1" height="6" /></td>
-      </tr>
-      <tr>
-        <td bgcolor="#E3EDF6"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="right"><img src="images/box-top-corner.gif" width="11" height="11" /></td>
-            </tr>
-            <tr>
-              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="15">&nbsp;</td>
-                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td height="20" valign="top" class="subtitle3">CUSTOMERS VOICE</td>
-                        </tr>
-                        <tr>
-                          <td class="text12">Om Sai Trade is a high-flying ISO 9001:2000 certified company. The certification itself talks about the quality benchmark being maintained by the firm. </td>
-                        </tr>
-                        <tr>
-                          <td height="16" valign="bottom" class="text10gray"><a href="customer-voice.html"><img src="images/read-more.gif" width="56" height="9" border="0" /></a></td>
-                        </tr>
-                    </table></td>
-                    <td width="15">&nbsp;</td>
-                  </tr>
-              </table></td>
-            </tr>
-            <tr>
-              <td height="10"></td>
-            </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td background="images/box-bot-line.gif"><img src="images/box-bot-line.gif" width="1" height="6" /></td>
-      </tr>
-      <tr>
-        <td bgcolor="#E3EDF6"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="right"><img src="images/box-top-corner.gif" width="11" height="11" /></td>
-            </tr>
-            <tr>
-              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="15">&nbsp;</td>
-                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td height="20" valign="top" class="subtitle3">OUR CERTIFICATIONS</td>
-                        </tr>
-                        <tr>
-                          <td class="text10gray"><a href="images/ISO omsai-2.JPG" target="_blank"><img src="images/certification.gif" width="255" height="91" border="0" /></a></td>
-                        </tr>
-                    </table></td>
-                    <td width="15">&nbsp;</td>
-                  </tr>
-              </table></td>
-            </tr>
-            <tr>
-              <td height="10"></td>
-            </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td background="images/box-bot-line.gif"><img src="images/box-bot-line.gif" width="1" height="3" /></td>
-      </tr>
-    </table></td>
-    <td width="10" align="left" valign="top"><p>&nbsp;</p>
-    </td>
-    <td width="679" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td><img src="images/inner-banner-1.jpg" width="679" height="14" /></td>
-          </tr>
-          <tr>
-            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="323" valign="top"><img src="images/nws-tyt.jpg" width="323" height="58" /></td>
-                  <td valign="top"><img src="images/inner-banner-2.jpg" width="356" height="58" /></td>
-                </tr>
-            </table></td>
-          </tr>
-          <tr>
-            <td><img src="images/inner-banner.jpg" width="679" height="107" /></td>
-          </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td height="20">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="20" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15">&nbsp;</td>
-            <td height="350" valign="top" class="text12">Under Construction</td>
-            <td width="15">&nbsp;</td>
-          </tr>
-        </table></td>
-      </tr>
-      
-    </table></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="17" align="left" valign="top">&nbsp;</td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="237" height="26" align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b">Company</td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b">Services</td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td>Products</td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td>Help &amp; Support</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" background="images/bot-bg-1.gif">
-  <tr>
-    <td width="237" height="26" align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="about-us.html" class="footer-link">About Us</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="about-us.html" class="footer-link">Vision &amp; Mission</a></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Supply of electrical equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left" valign="top"><img src="images/bullet-2.gif" width="4" height="5" vspace="4" /></td>
-            <td><a href="services.html" class="footer-link">Tender based supply to government organizations</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Supply of Telecommunication equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Supply of Transmission equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Telecom testing equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Telecommunication equipment supply</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Transmission equipment supply</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Telecom Testing equipment</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Telecom Products</a></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="contact-us.html" class="footer-link">Contact Us</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="enquiry.html" class="footer-link">Enquiry</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="sitemap.html" class="footer-link">Sitemap</a></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="20" colspan="7" align="left" valign="middle" class="subtitle-b">&nbsp;</td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="54" align="left" valign="middle" background="images/bot-bg-2.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td width="400" class="text12">Copyright © 2026 Om Sai Trade Concern. All rights reserved. </td>
-        <td align="right" class="text12">&nbsp;</td>
-        <td width="15">&nbsp;</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="15" align="left" valign="top">&nbsp;</td>
-  </tr>
-</table>
 </body>
 </html>
-
-

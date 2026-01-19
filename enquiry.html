@@ -1,486 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Om Sai Trade Concern</title>
-<link href="css/sai.css" rel="stylesheet" type="text/css" />
-<link href="css/modern-header.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript">
-<!--
-function MM_validateForm() { //v4.0
-  if (document.getElementById){
-    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
-    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
-      if (val) { nm=val.name; if ((val=val.value)!="") {
-        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
-          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
-        } else if (test!='R') { num = parseFloat(val);
-          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
-          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
-            min=test.substring(8,p); max=test.substring(p+1);
-            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
-      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
-    } if (errors) alert('The following error(s) occurred:\n'+errors);
-    document.MM_returnValue = (errors == '');
-} }
-//-->
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Om Sai Trade Concern for enquiries about electrical, telecom, and electronic products. Get in touch with our team.">
+    <title>Enquiry - Om Sai Trade Concern</title>
+    
+    <!-- Modern CSS System -->
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
+    <link href="css/modern-header.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="modern-header">
-    <div class="header-wrapper">
-        <div class="header-logo">
-            <a href="index.html"><img src="images/LOGO.gif" alt="Om Sai Trade Concern Logo" /></a>
-        </div>
-        <nav class="modern-nav">
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="clients.html">Clients</a>
-            <a href="services.html">Services</a>
-            <a href="enquiry.html">Enquiry</a>
-            <a href="contact-us.html">Contact Us</a>
-            <a href="about-us.html">About Us</a>
-        </nav>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="modern-header">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="index.html"><img src="images/LOGO.gif" alt="Om Sai Trade Concern Logo"></a>
+                </div>
+                <nav class="modern-nav" aria-label="Main Navigation">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="services.html">Services</a>
+                    <a href="enquiry.html">Enquiry</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="about-us.html">About Us</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero hero-small enquiry-hero" style="background: linear-gradient(135deg, rgba(1, 107, 185, 0.9) 0%, rgba(58, 148, 225, 0.85) 100%), url('images/inner-banner.jpg') center/cover no-repeat;">
+            <div class="hero-content">
+                <h1 class="hero-title">Enquiry</h1>
+                <p class="hero-subtitle">Send us your requirements and we'll get back to you promptly</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- News & Events -->
+                <div class="sidebar-box">
+                    <h3>News & Events</h3>
+                    <div class="news-item">
+                        <span class="news-date">27 Sep 11</span>
+                        <a href="news-events.html" class="news-link">We are coming with new products</a>
+                    </div>
+                    <div class="news-item">
+                        <span class="news-date">27 Oct 11</span>
+                        <a href="news-events.html" class="news-link">We are coming with new products</a>
+                    </div>
+                    <a href="news-events.html" class="read-more">Read More</a>
+                </div>
+
+                <!-- Customer Voice -->
+                <div class="sidebar-box">
+                    <h3>Customers Voice</h3>
+                    <p style="color: var(--text-secondary); font-size: 14px; line-height: 1.6;">
+                        Om Sai Trade is a high-flying ISO 9001:2000 certified company. The certification itself talks about the quality benchmark being maintained by the firm.
+                    </p>
+                    <a href="customer-voice.html" class="read-more">Read More</a>
+                </div>
+
+                <!-- Certifications -->
+                <div class="sidebar-box">
+                    <h3>Our Certifications</h3>
+                    <div class="certification">
+                        <a href="images/ISO omsai-2.JPG" target="_blank">
+                            <img src="images/certification.gif" alt="ISO 9001:2000 Certification" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Content Area -->
+            <section class="content-area">
+                <div class="enquiry-form">
+                    <h2 style="color: var(--primary-color); margin-bottom: var(--spacing-md); text-align: center;">Send Us Your Enquiry</h2>
+                    <p style="text-align: center; color: var(--text-secondary); margin-bottom: var(--spacing-xl);">
+                        Fill out the form below and our team will respond to your enquiry within 24-48 hours.
+                    </p>
+
+                    <!-- Success/Error Message Placeholders -->
+                    <div id="form-success" class="form-message form-message-success" style="display: none;">
+                        Thank you for your enquiry! We will get back to you shortly.
+                    </div>
+                    <div id="form-error" class="form-message form-message-error" style="display: none;">
+                        There was an error submitting your enquiry. Please try again.
+                    </div>
+
+                    <!-- Enquiry Form - Keeps send.php backend -->
+                    <form action="send.php" method="post" id="enquiry-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Name" class="form-label">
+                                    Your Name <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="Name" 
+                                    name="Name" 
+                                    class="form-control" 
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="Email" class="form-label">
+                                    Email Address <span class="required">*</span>
+                                </label>
+                                <input 
+                                    type="email" 
+                                    id="Email" 
+                                    name="Email" 
+                                    class="form-control" 
+                                    placeholder="Enter your email address"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="Phone" class="form-label">
+                                    Phone Number
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    id="Phone" 
+                                    name="Phone" 
+                                    class="form-control" 
+                                    placeholder="Enter your phone number"
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="Company" class="form-label">
+                                    Company/Organization
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="Company" 
+                                    name="Company" 
+                                    class="form-control" 
+                                    placeholder="Enter your company name"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Subject" class="form-label">
+                                Subject
+                            </label>
+                            <select id="Subject" name="Subject" class="form-control">
+                                <option value="">Select a subject</option>
+                                <option value="Product Enquiry">Product Enquiry</option>
+                                <option value="Service Enquiry">Service Enquiry</option>
+                                <option value="Tender Information">Tender Information</option>
+                                <option value="Price Quote">Price Quote</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Message" class="form-label">
+                                Your Message <span class="required">*</span>
+                            </label>
+                            <textarea 
+                                id="Message" 
+                                name="Message" 
+                                class="form-control" 
+                                placeholder="Describe your requirements in detail..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                Submit Enquiry
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Additional Contact Info -->
+                <div style="margin-top: var(--spacing-xxl); padding: var(--spacing-xl); background: var(--bg-gray); border-radius: var(--radius-lg); text-align: center;">
+                    <h3 style="margin-bottom: var(--spacing-md);">Prefer to Call?</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: var(--spacing-md);">
+                        Our team is available to assist you during business hours.
+                    </p>
+                    <a href="contact-us.html" class="btn btn-secondary">View Contact Details</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="about-us.html">Vision & Mission</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Supply of Electrical Equipment</a></li>
+                        <li><a href="services.html">Tender Based Supply</a></li>
+                        <li><a href="services.html">Telecom Equipment</a></li>
+                        <li><a href="services.html">Transmission Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Telecommunication Equipment</a></li>
+                        <li><a href="products.html">Transmission Equipment</a></li>
+                        <li><a href="products.html">Telecom Testing Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2026 Om Sai Trade Concern. All rights reserved.</p>
+            </div>
+        </footer>
     </div>
-</div>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="20" align="left" valign="top"></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="10" align="left" valign="top"></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td align="left" valign="top" bgcolor="#EDF3FA"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td valign="top" bgcolor="#e3edf6"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="right"><img src="images/box-top-corner.gif" width="11" height="11" /></td>
-            </tr>
-            <tr>
-              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="15">&nbsp;</td>
-                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td height="21" valign="top" class="subtitle3">NEWS &amp; EVENTS</td>
-                        </tr>
-                        <tr>
-                          <td class="text10gray"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                              <tr>
-                                <td height="17" valign="top"><span class="text11bold">27 Sep 11</span> <a href="#" class="box-link">We are coming with new products<br />
-                                </a></td>
-                              </tr>
-                              <tr>
-                                <td height="17"><span class="text11bold">27 Oct 11</span> <a href="#" class="box-link">We are coming with new products<br />
-                                </a></td>
-                              </tr>
-                          </table></td>
-                        </tr>
-                        <tr>
-                          <td height="16" valign="bottom" class="text10gray"><a href="news-events.html"><img src="images/read-more.gif" width="56" height="9" border="0" /></a><a href="#"></a></td>
-                        </tr>
-                    </table></td>
-                    <td width="15">&nbsp;</td>
-                  </tr>
-              </table></td>
-            </tr>
-            <tr>
-              <td height="10"></td>
-            </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td background="images/box-bot-line.gif"><img src="images/box-bot-line.gif" width="1" height="6" /></td>
-      </tr>
-      <tr>
-        <td bgcolor="#E3EDF6"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="right"><img src="images/box-top-corner.gif" width="11" height="11" /></td>
-            </tr>
-            <tr>
-              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="15">&nbsp;</td>
-                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td height="20" valign="top" class="subtitle3">CUSTOMERS VOICE</td>
-                        </tr>
-                        <tr>
-                          <td class="text12">Om Sai Trade is a high-flying ISO 9001:2000 certified company. The certification itself talks about the quality benchmark being maintained by the firm. </td>
-                        </tr>
-                        <tr>
-                          <td height="16" valign="bottom" class="text10gray"><a href="customer-voice.html"><img src="images/read-more.gif" width="56" height="9" border="0" /></a></td>
-                        </tr>
-                    </table></td>
-                    <td width="15">&nbsp;</td>
-                  </tr>
-              </table></td>
-            </tr>
-            <tr>
-              <td height="10"></td>
-            </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td background="images/box-bot-line.gif"><img src="images/box-bot-line.gif" width="1" height="6" /></td>
-      </tr>
-      <tr>
-        <td bgcolor="#E3EDF6"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td align="right"><img src="images/box-top-corner.gif" width="11" height="11" /></td>
-            </tr>
-            <tr>
-              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                  <tr>
-                    <td width="15">&nbsp;</td>
-                    <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                          <td height="20" valign="top" class="subtitle3">OUR CERTIFICATIONS</td>
-                        </tr>
-                        <tr>
-                          <td class="text10gray"><a href="images/ISO omsai-2.JPG" target="_blank"><img src="images/certification.gif" width="255" height="91" border="0" /></a></td>
-                        </tr>
-                    </table></td>
-                    <td width="15">&nbsp;</td>
-                  </tr>
-              </table></td>
-            </tr>
-            <tr>
-              <td height="10"></td>
-            </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td background="images/box-bot-line.gif"><img src="images/box-bot-line.gif" width="1" height="3" /></td>
-      </tr>
-    </table></td>
-    <td width="10" align="left" valign="top"><p>&nbsp;</p>
-    </td>
-    <td width="679" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td><img src="images/inner-banner-1.jpg" width="679" height="14" /></td>
-          </tr>
-          <tr>
-            <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="323" valign="top"><img src="images/enqry-tyt.jpg" width="323" height="58" /></td>
-                  <td valign="top"><img src="images/inner-banner-2.jpg" width="356" height="58" /></td>
-                </tr>
-            </table></td>
-          </tr>
-          <tr>
-            <td><img src="images/inner-banner.jpg" width="679" height="107" /></td>
-          </tr>
-        </table></td>
-      </tr>
-      <tr>
-        <td height="20">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="20" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15">&nbsp;</td>
-            <td height="350" valign="top" class="text12"><table width="95%" border="0" cellspacing="0" cellpadding="0">
-              <tr>
-                <td height="31" class="commontext">&nbsp;</td>
-              </tr>
-              <tr>
-                <td background="images/top-space.gif"><img src="images/top-space.gif" width="1" height="10" /></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top" class="commontext"><form action="send.php" method="post" enctype="application/x-www-form-urlencoded" name="fmSend" target="_self" id="fmSend" onsubmit="MM_validateForm('Name','','R','Email','','RisEmail','Message','','R');return document.MM_returnValue">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                      <tr>
-                        <td class="bg-enguiry"><table class="bdrtxt" width="375" align="center" border="0" cellpadding="0" cellspacing="0">
-                            <tbody>
-                              <tr>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td width="167" align="left" height="15" valign="middle">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td width="92" align="left" valign="top"><div class="text12" align="left"><strong>Name</strong></div></td>
-                                <td width="17" align="left" valign="top"><strong>:</strong></td>
-                                <td align="left" valign="top"><div align="left">
-                                    <input name="Name" class="txtfld" id="Name" type="text" />
-                                </div></td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" height="15" valign="middle">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top"><div class="text12" align="left"><strong>Email</strong></div></td>
-                                <td align="left" valign="top"><strong>:</strong></td>
-                                <td align="left" valign="top"><div align="left">
-                                    <input name="Email" class="txtfld" id="Email" type="text" />
-                                </div></td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" height="15" valign="middle">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top"><div class="text12" align="left"><strong>Phone</strong></div></td>
-                                <td align="left" valign="top"><strong>:</strong></td>
-                                <td align="left" height="15" valign="top"><div align="left">
-                                    <input name="Phone" class="txtfld" id="Phone" type="text" />
-                                </div></td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" height="15" valign="middle">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="middle"><div class="text12" align="left"><strong>Company</strong></div></td>
-                                <td align="left" valign="middle"><strong>:</strong></td>
-                                <td align="left" height="15" valign="middle"><input name="Company" class="txtfld" id="Company" type="text" /></td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" height="15" valign="middle">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top"><div class="text12" align="left"><strong>Address</strong></div></td>
-                                <td align="left" valign="top"><strong>:</strong></td>
-                                <td align="left" valign="top"><div align="left">
-                                    <textarea name="Address" rows="5" class="txtfld" id="Address"></textarea>
-                                </div></td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" valign="middle">&nbsp;</td>
-                                <td align="left" height="15" valign="middle">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top"><div align="left" class="text12"><strong>Enquiry</strong></div></td>
-                                <td align="left" valign="top"><strong>:</strong></td>
-                                <td align="left" valign="top"><div align="left"><font color="#66ccff"> </font>
-                                        <textarea name="Message" rows="5" class="txtfld" id="Message"></textarea>
-                                </div></td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top"><span class="style10"></span></td>
-                                <td align="left" valign="top">&nbsp;</td>
-                                <td align="left" valign="top">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top"><span class="style10"></span></td>
-                                <td align="left" valign="top">&nbsp;</td>
-                                <td align="left" valign="top">&nbsp;</td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top">&nbsp;</td>
-                                <td align="left" valign="top">&nbsp;</td>
-                                <td align="left" valign="top"><font color="#66ccff">
-                                  <label>
-                                  <input name="Submit" class="formbutton" value="Submit" type="submit" />
-                                    &nbsp;&nbsp;&nbsp; </label>
-                                  <input name="Submit2" class="formbutton" value="Reset" type="reset" />
-                                </font></td>
-                              </tr>
-                              <tr>
-                                <td align="left" valign="top">&nbsp;</td>
-                                <td align="left" valign="top">&nbsp;</td>
-                                <td align="left" valign="top">&nbsp;</td>
-                              </tr>
-                            </tbody>
-                        </table></td>
-                      </tr>
-                    </table>
-                </form></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top" class="commontext">&nbsp;</td>
-              </tr>
-            </table></td>
-            <td width="15">&nbsp;</td>
-          </tr>
-        </table></td>
-      </tr>
-      
-    </table></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="17" align="left" valign="top">&nbsp;</td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="237" height="26" align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b">Company</td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b">Services</td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td>Products</td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td align="left" valign="middle" background="images/bot-line-1.gif" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td>Help &amp; Support</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0" background="images/bot-bg-1.gif">
-  <tr>
-    <td width="237" height="26" align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="about-us.html" class="footer-link">About Us</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="about-us.html" class="footer-link">Vision &amp; Mission</a></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Supply of electrical equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left" valign="top"><img src="images/bullet-2.gif" width="4" height="5" vspace="4" /></td>
-            <td><a href="services.html" class="footer-link">Tender based supply to government organizations</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Supply of Telecommunication equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Supply of Transmission equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="services.html" class="footer-link">Telecom testing equipments</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td width="237" align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Telecommunication equipment supply</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Transmission equipment supply</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Telecom Testing equipment</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="products.html" class="footer-link">Telecom Products</a></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-    <td width="11" align="left" valign="top">&nbsp;</td>
-    <td align="left" valign="top" class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td height="10" colspan="2"></td>
-      </tr>
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td class="subtitle-b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td width="15" height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="contact-us.html" class="footer-link">Contact Us</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="enquiry.html" class="footer-link">Enquiry</a></td>
-          </tr>
-          <tr>
-            <td height="20" align="left"><img src="images/bullet-2.gif" width="4" height="5" /></td>
-            <td><a href="sitemap.html" class="footer-link">Sitemap</a></td>
-          </tr>
-        </table></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="20" colspan="7" align="left" valign="middle" class="subtitle-b">&nbsp;</td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="54" align="left" valign="middle" background="images/bot-bg-2.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="15">&nbsp;</td>
-        <td width="400" class="text12">Copyright © 2026 Om Sai Trade Concern. All rights reserved. </td>
-        <td align="right" class="text12">&nbsp;</td>
-        <td width="15">&nbsp;</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td height="15" align="left" valign="top">&nbsp;</td>
-  </tr>
-</table>
 </body>
 </html>
-
-
