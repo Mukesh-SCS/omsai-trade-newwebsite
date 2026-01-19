@@ -1,85 +1,87 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>File Not Found</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" >
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style type="text/css">
-body {
-  background-color: #eee;
-}
-
-body, h1, p {
-  font-family: "Helvetica Neue", "Segoe UI", Segoe, Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.container {
-  margin-left:  auto;
-  margin-right:  auto;
-  margin-top: 177px;
-  max-width: 1170px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.row:before, .row:after {
-  display: table;
-  content: " ";
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-.col-md-push-3 {
-  margin-left: 25%;
-}
-
-h1 {
-  font-size: 48px;
-  font-weight: 300;
-  margin: 0 0 20px 0;
-}
-
-.lead {
-  font-size: 21px;
-  font-weight: 200;
-  margin-bottom: 20px;
-}
-
-p {
-  margin: 0 0 10px;
-}
-
-a {
-  color: #3282e6;
-  text-decoration: none;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Om Sai Trade Concern</title>
+    
+    <!-- Modern CSS System -->
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/components.css" rel="stylesheet">
+    <link href="css/pages.css" rel="stylesheet">
+    <link href="css/modern-header.css" rel="stylesheet">
 </head>
 
 <body>
-<div class="container text-center" id="error">
-  <svg height="100" width="100">
-    <polygon points="50,25 17,80 82,80" stroke-linejoin="round" style="fill:none;stroke:#ff8a00;stroke-width:8" />
-    <text x="42" y="74" fill="#ff8a00" font-family="sans-serif" font-weight="900" font-size="42px">!</text>
-  </svg>
- <div class="row">
-    <div class="col-md-12">
-      <div class="main-icon text-warning"><span class="uxicon uxicon-alert"></span></div>
-        <h1>File not found (404 error)</h1>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-md-push-3">
-      <p class="lead">If you think what you're looking for should be here, please contact the site owner.</p>
-    </div>
-  </div>
-</div>
+    <div class="page-wrapper">
+        <!-- Header -->
+        <header class="modern-header">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <a href="index.html"><img src="images/LOGO.gif" alt="Om Sai Trade Concern Logo"></a>
+                </div>
+                <nav class="modern-nav" aria-label="Main Navigation">
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="clients.html">Clients</a>
+                    <a href="services.html">Services</a>
+                    <a href="enquiry.html">Enquiry</a>
+                    <a href="contact-us.html">Contact Us</a>
+                    <a href="about-us.html">About Us</a>
+                </nav>
+            </div>
+        </header>
 
+        <!-- 404 Content -->
+        <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: var(--spacing-xxl);">
+            <div style="text-align: center; max-width: 600px;">
+                <div style="font-size: 120px; color: var(--primary-color); margin-bottom: var(--spacing-lg);">404</div>
+                <h1 style="font-size: var(--font-size-3xl); margin-bottom: var(--spacing-md);">Page Not Found</h1>
+                <p style="color: var(--text-secondary); font-size: var(--font-size-lg); margin-bottom: var(--spacing-xl);">
+                    Sorry, the page you are looking for doesn't exist or has been moved.
+                </p>
+                <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                    <a href="index.html" class="btn btn-primary btn-lg">Go to Homepage</a>
+                    <a href="contact-us.html" class="btn btn-secondary btn-lg">Contact Us</a>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Our Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="products.html">Our Products</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="enquiry.html">Enquiry</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2026 Om Sai Trade Concern. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
